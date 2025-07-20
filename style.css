@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: lightgray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+}
+
+
+.logo {
+    height: 80px;
+}
