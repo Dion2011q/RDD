@@ -1,8 +1,10 @@
 :root {
     --second-color: #00436a;
     --third-color: #205295;
-    --text-color: #FFFFFF;
+    --text-color-black: #000000;
+    --text-color-white: #FFFFFF;
     --link-color: #2C74B3;
+    --hover-color: #3472ce;
     --logo-color: #00436a;
 }
 
@@ -35,18 +37,21 @@ html, body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: white;
-    color: var(--text-color);
+    color: var(--text-color-black);
     scroll-behavior: smooth;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     flex: 1;
     min-width: 95%;
     max-width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .logo {
@@ -60,6 +65,7 @@ header {
     justify-content: space-between;
     padding: 12px 24px;
     background-color: rgba(0, 67, 106, 0.9);
+    color: var(--text-color-white);
     backdrop-filter: blur(4px); /* achtergrond blur header */
     -webkit-backdrop-filter: blur(4px); /* voor safari blur */
     color: var(--text-color);
@@ -80,15 +86,15 @@ header a {
     color: white;
     text-decoration: none;
     padding: 8px 24px;
-    background: var(--third-color);
+    background: var(--link-color);
     border-radius: 999px;
     transition: background 0.2s, color 0.2s;
     display: inline-block;
 }
 
 header a:hover {
-    background: var(--link-color);
-    color: var(--text-color);
+    background: var(--hover-color);
+    color: var(--text-color-white);
     text-decoration: underline;
 }
 
@@ -132,6 +138,7 @@ header h1 {
     margin: 0;
     font-size: 24px;
     vertical-align: middle;
+    color: var(--text-color-white);
 }
 
 header ul {
@@ -151,11 +158,11 @@ header nav a:hover {
 
 #contact-linkheader {
     margin-top: 0px;
-    color: white;
+    color: var(--text-color-white);
     text-decoration: none;
     padding: 8px 16px;
     font-weight: bold;
-    background: var(--third-color);
+    background: var(--link-color);
     border-radius: 999px;
     max-width: 90px;
     transition: background 0.2s, color 0.2s;
@@ -164,7 +171,7 @@ header nav a:hover {
 
 footer {
     background-color: rgba(0, 67, 106, 0.9);
-    color: var(--text-color);
+    color: var(--text-color-white);
     text-align: center;
     padding: 10px 20px;
     position: relative;
