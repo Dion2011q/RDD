@@ -182,8 +182,10 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 999px;
-    margin: 24px auto;
+    margin: 0px auto;
+    margin-bottom: 24px;
     width: fit-content;  
     min-width: 95%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999999;
 }

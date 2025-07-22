@@ -6,6 +6,7 @@
     <title>RDD - Video Drone Service</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
     <script src="/js/script.js" defer></script>
 
     <!-- favicon -->
@@ -21,8 +22,7 @@
     <header>
         <div class="logo-container fadein-stagger">
             <img src="img/logo.png" alt="logo" class="logo">
-            <h1 class="fadein-childfast">RDD - </h1>
-            <h1 class="fadein-childfast">Video Drone Service</h1>
+            <h1 class="fadein-childfast">RDD - Video Drone Service</h1>
         </div>
         <div class="headerlinks">
             <nav>
@@ -38,15 +38,21 @@
         </div>
     </header>
     <main>
-        <div id="hero">
-            <h1>Welkom bij RDD Video Drone Service</h1>
-            <a href="#contact" class="pill-button">Contact</a>
-        </div>
-        <div id="about">
+        <section id="hero">
+            <video autoplay muted loop playsinline>
+                <source src="/img/hero.mp4" type="video/mp4">
+                Je browser ondersteunt geen video.
+            </video>
+            <div class="hero-content">
+                <h1>Welkom bij RDD Video Drone Service</h1>
+                <a href="#contact" class="pill-button">Contact</a>
+            </div>
+        </section>
+        <section id="about">
             <h2>Over ons</h2>
             <p></p>
-        </div>
-        <div id="projects">
+        </section>
+        <section id="projects">
             <h2>Projecten</h2>
             <p>Hieronder vindt u een overzicht van onze projecten.</p>
             <div class="project-list">
@@ -66,7 +72,7 @@
                     <p>Beschrijving van project 3.</p>
                 </div>
             </div>
-        </div>
+        </section>
         <section id="contact">
             <h2>Contact</h2>
             <p>Voor vragen of meer informatie kunt u contact met ons opnemen via het onderstaande formulier.</p>
@@ -75,14 +81,23 @@
         <section id="social-media">
             <h2>Volg ons</h2>
             <ul>
-                <li><a href="https://www.facebook.com/rdd" target="_blank"><img class="social-media-icon" src="/img/icons/facebook.png"></a></li>
-                <li><a href="https://www.youtube.com/@rdd" target="_blank"><img class="social-media-icon" src="/img/icons/youtube.png"></a></li>
-                <li><a href="https://www.instagram.com/rdd" target="_blank"><img class="social-media-icon" src="/img/icons/instagram.png"></a></li>
+                <li><a href="https://www.facebook.com/rdd" target="_blank"><img class="social-media-icon" src="/img/icons/facebook.png" alt="facebook logo"></a></li>
+                <li><a href="https://www.youtube.com/@rdd" target="_blank"><img class="social-media-icon" src="/img/icons/youtube.png" alt="youtube logo"></a></li>
+                <li><a href="https://www.instagram.com/rdd" target="_blank"><img class="social-media-icon" src="/img/icons/instagram.png" alt="instagram logo"></a></li>
+                <li><a href="https://www.google.com/maps/" target="_blank"><img class="social-media-icon" src="/img/icons/maps.png" alt="maps logo"></a></li>
             </ul>
         </section>  
     </main>
     <footer>
         <p>&copy; <span id="year"></span> RDD. Alle rechten voorbehouden.</p>
+        <section id="social-media">
+            <ul>
+                <li><a href="https://www.facebook.com/rdd" target="_blank"><img class="social-media-icon" src="/img/icons/facebook.png" alt="facebook logo"></a></li>
+                <li><a href="https://www.youtube.com/@rdd" target="_blank"><img class="social-media-icon" src="/img/icons/youtube.png" alt="youtube logo"></a></li>
+                <li><a href="https://www.instagram.com/rdd" target="_blank"><img class="social-media-icon" src="/img/icons/instagram.png" alt="instagram logo"></a></li>
+                <li><a href="https://www.google.com/maps/" target="_blank"><img class="social-media-icon" src="/img/icons/maps.png" alt="maps logo"></a></li>
+            </ul>
+        </section>
     </footer>
     
 </body>
