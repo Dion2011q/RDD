@@ -98,7 +98,6 @@ header a {
 header a:hover {
     background: var(--hover-color);
     color: var(--text-color-white);
-    text-decoration: underline;
 }
 
 .logo-container {
@@ -155,10 +154,6 @@ header ul {
     vertical-align: middle;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-}
-
 #contact-linkheader {
     margin-top: 0px;
     color: var(--text-color-white);
@@ -168,7 +163,6 @@ header nav a:hover {
     background: var(--link-color);
     border-radius: 999px;
     max-width: 90px;
-    transition: background 0.2s, color 0.2s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
