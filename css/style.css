@@ -186,3 +186,11 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 9999999;
 }
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
