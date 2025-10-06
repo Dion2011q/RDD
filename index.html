@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDD - Video Drone Service</title>
+
+    <!-- CSS Linking -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
+
+    <!-- JavaScript Linking -->    
     <script src="/js/script.js" defer></script>
+    <script src="/js/hamburger.js" defer></script>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -14,10 +21,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
 
+    <!-- Meta Tag for ios bar -->
     <meta name="theme-color" content="#00436a">
 </head>
 <body>
-    <div id="top-of-website"></div> <!-- for scroll to top of website. DON'T REMOVE -->
+    <div id="home"></div> <!-- for scroll to top of website. DON'T REMOVE -->
     <header>
         <div class="logo-container fadein-stagger">
             <img src="img/logo.png" alt="logo" class="logo">
@@ -26,7 +34,7 @@
         <div class="headerlinks">
             <nav>
                 <ul>
-                    <li><a href="#top-of-website" class="pill-button">Home</a></li>
+                    <li><a href="#home" class="pill-button">Home</a></li>
                     <li><a href="#about" class="pill-button">Over ons</a></li>
                     <li><a href="#waarom" class="pill-button">Waarom</a></li>
                     <li><a href="#services" class="pill-button">Services</a></li>
@@ -34,6 +42,12 @@
             </nav>
         </div>
         <div class="headercontact">
+            <!-- Hamburger knop -->
+            <div class="hamburger pill-button" id="hamburger-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <a id="contact-linkheader" href="#contact" class="pill-button">Contact</a>
         </div>
     </header>
@@ -103,10 +117,12 @@
         <section id="contact">
             <h1>Contact</h1>
             <p>Voor vragen of meer informatie kunt u contact met ons opnemen.</p>
-            <a href="mailto:rddvideodroneservice@gmail.com">Mail</a>
-            <a href="tel:+31615652816">Bel</a>
+            <div class="contactlinks">
+                <a class="pill-button" href="mailto:rddvideodroneservice@gmail.com">Mail</a>
+                <a class="pill-button" href="tel:+31615652816">Bel</a>
+            </div>
         </div>
-        </div>
+    </div>
         <section id="social-media">
             <h1>Volg ons</h1>
             <ul>
@@ -128,6 +144,5 @@
             </ul>
         </section>
     </footer>
-    
 </body>
 </html>

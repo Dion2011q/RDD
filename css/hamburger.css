@@ -1,0 +1,70 @@
+/* Hamburger standaardstijl */
+.hamburger {
+  display: none; /* standaard verborgen op desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 14px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000000000;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover span {
+  background: #086ca4;
+}
+
+/* Verborgen menu standaard op mobiel */
+@media (max-width: 1080px) {
+  .headerlinks {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    left: 0;
+    width: 95vw;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 24px;
+    background: rgba(0, 67, 106, 0.95);
+    display: none; /* Make sure the menu is hidden by default */
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Ensure the dropdown appears above the header (header has high z-index) */
+    z-index: 1000000001;
+  }
+
+  .headerlinks.show {
+    display: flex; /* This shows the menu when the class is added */
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .headerlinks nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: flex; /* alleen op mobiel */
+  }
+}
+
+
+/* Animatie */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
