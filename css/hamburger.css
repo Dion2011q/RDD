@@ -18,12 +18,8 @@
   transition: all 0.3s ease;
 }
 
-.hamburger:hover span {
-  background: #086ca4;
-}
-
 /* Verborgen menu standaard op mobiel */
-@media (max-width: 1080px) {
+@media (max-width: 1170px) {
   .headerlinks {
     position: absolute;
     top: calc(100% + 12px);
