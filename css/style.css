@@ -66,6 +66,31 @@ h1 {
     height: 50px;
 }
 
+.pill-button {
+    background-color: var(--link-color);
+    color: var(--text-color-white);
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1); /* standaardgrootte */
+}
+
+.pill-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.1); /* iets groter bij hover */
+}
+
+.pill-button:active {
+    transform: scale(0.95); /* iets kleiner bij klikken */
+}
+
 header {
     display: flex;
     align-items: center;
@@ -184,7 +209,7 @@ footer {
     align-items: center;
     border-radius: 999px;
     box-sizing: border-box;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-bottom: 24px;
     margin-top: 24px; 
     min-width: 95%;
@@ -198,4 +223,33 @@ footer {
         align-items: center;
         text-align: center;
     }
+}
+
+.social-media ul {
+    color: var(--text-color-white);
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    gap: 16px;
+    list-style-type: none;
+}
+
+
+.social-media-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+}
+
+.social-media-icon:hover {
+    transform: scale(1.1);
 }

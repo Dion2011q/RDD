@@ -1,28 +1,3 @@
-.pill-button {
-    background-color: var(--link-color);
-    color: var(--text-color-white);
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transform: scale(1); /* standaardgrootte */
-}
-
-.pill-button:hover {
-    background-color: var(--hover-color);
-    transform: scale(1.1); /* iets groter bij hover */
-}
-
-.pill-button:active {
-    transform: scale(0.95); /* iets kleiner bij klikken */
-}
-
 #hero {
     color: var(--text-color-white);
     text-align: center;
@@ -138,36 +113,25 @@
     box-sizing: border-box;
 }
 
-#services {
-    color: var(--text-color-white);
-    padding: 24px;
-    text-align: center;
-    min-height: 60vh;
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px;
-    box-sizing: border-box;
+#waarom h1 {
+    margin-bottom: 24px;
 }
 
-.services-list, .waarom-list {
+.waarom-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
 @media (max-width: 768px) {
-    .services-list, .waarom-list {
+    .waarom-list {
         flex-direction: column;
     }
 }
 
-.service-item, .waarom-item {
+.waarom-item {
     background: var(--logo-color);
     color: var(--text-color-white);
     padding: 24px;
@@ -175,12 +139,10 @@
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     flex: 1;
-    min-width: 25vw;
-    max-width: 27vw;
-    height: 580px;
+    min-width: 80vw;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     transform: scale(1);
@@ -189,25 +151,36 @@
 }
 
 @media (max-width: 768px) {
-    .service-item, .waarom-item {
+    .waarom-item {
         min-width: 80vw;
         max-width: 90vw;
     }
     
 }
 
-.service-item:hover, .waarom-item:hover {
-    transform: scale(1.03);
+.waarom-item:hover {
+    transform: scale(1.01);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .waarom-img {
-    width: 90%;
+    width: 40vw;
     height: auto;
     margin-bottom: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
-    border: 2px solid var(--text-color-white);
+}
+
+.waarom-text {
+    text-align: left;
+    max-width: 30vw;
+    margin-left: 24px;
+}
+
+#services {
+    color: var(--text-color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact {    
@@ -231,31 +204,4 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
-}
-
-.social-media ul {
-    color: var(--text-color-white);
-    padding: 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px;
-    gap: 16px;
-    list-style: none;
-}
-
-.social-media-icon {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    transform: scale(1);
-    transition: transform 0.3s ease;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.social-media-icon:hover {
-    transform: scale(1.1);
 }
