@@ -1,3 +1,8 @@
+#onze-services-title {
+    margin-top: 128px;
+    margin-bottom: 24px;
+}
+
 #services {
     color: var(--text-color-white);
     padding: 24px;
@@ -16,6 +21,7 @@
 .services-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -37,7 +43,7 @@
     flex: 1;
     min-width: 25vw;
     max-width: 27vw;
-    height: 580px;
+    height: fit-content;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -59,4 +65,11 @@
 .service-item:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 12px;
 }
