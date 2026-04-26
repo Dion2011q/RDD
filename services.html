@@ -65,8 +65,18 @@
         </div>
     </header>
     <main class="fadein-stagger">
-        <h1 class="fadein-childfast" id="onze-services-title">Onze Services</h1>
-            <div class="services-list fadein-stagger">
+        <section id="hero">
+            <video autoplay muted loop playsinline>
+                <source src="/img/hero.mp4" type="video/mp4">
+                Je browser ondersteunt geen video.
+            </video>
+            <div class="hero-content fadein-stagger">
+                <h1 class="fadein-childfast" id="onze-services-title">Onze Services</h1>
+                <a href="#services-list" class="pill-button fadein-childslow">Ontdek</a>
+            </div>
+        </section>
+        <div id="services-list"></div> <!-- for scroll to top of services. DON'T REMOVE -->
+        <div class="services-list fadein-stagger">
                 <div class="service-item fadein-childfast">
                     <img src="/img/services/test image.png" alt="service 1" class="service-image">
                     <h3>Reclamedoeleinden</h3>
