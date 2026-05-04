@@ -48,6 +48,10 @@
     }
 }
 
+.about-text p {
+    font-size: 1.15rem;
+}
+
 #waarom {
     color: var(--text-color-white);
     padding: 24px;
