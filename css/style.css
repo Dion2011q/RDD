@@ -41,6 +41,7 @@ html, body {
     background: -webkit-linear-gradient(45deg,rgba(0, 53, 84, 1) 16%, rgba(0, 122, 153, 1) 84%);
     background: -moz-linear-gradient(45deg,rgba(0, 53, 84, 1) 16%, rgba(0, 122, 153, 1) 84%);
     background: linear-gradient(45deg,rgba(0, 53, 84, 1) 16%, rgba(0, 122, 153, 1) 84%);
+    overflow-x: hidden;
 }
 
 main {
@@ -128,6 +129,11 @@ header a:hover {
     color: var(--text-color-white);
 }
 
+#home-linkheader {
+    background: none;
+    padding: 0;
+}
+
 .logo-container {
     flex: 1;
     display: flex;
@@ -136,9 +142,10 @@ header a:hover {
     min-width: 0;
 }
 
-.logo-container p {
+.logo-container h1 {
     color: lightgray;
 }
+
 
 .headerlinks {
     flex: 2;

@@ -1,21 +1,26 @@
-/* Hamburger standaardstijl */
 .hamburger {
   display: none; /* standaard verborgen op desktop */
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 20px;
   height: 14px;
   border: none;
   cursor: pointer;
+  background: none;
+  padding: 0;
+  box-shadow: none;
   z-index: 1000000000;
 }
 
 .hamburger span {
   display: block;
+  width: 100%;
   height: 3px;
   background: white;
   border-radius: 2px;
   transition: all 0.3s ease;
+  z-index: 100000000000;
 }
 
 /* Verborgen menu standaard op mobiel */
@@ -48,7 +53,7 @@
   }
 
   .hamburger {
-    display: flex; /* alleen op mobiel */
+    display: flex; /* only on mobile */
   }
 }
 
