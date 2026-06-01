@@ -146,6 +146,11 @@ header a:hover {
     color: lightgray;
 }
 
+@media (max-width: 768px) {
+    .logo-container h1 {
+        display: none;
+    }
+}
 
 .headerlinks {
     flex: 2;
