@@ -92,9 +92,9 @@ h1 {
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
     padding: 12px 24px;
     background-color: rgba(0, 67, 106, 0.6);
     color: var(--text-color-white);
@@ -135,7 +135,7 @@ header a:hover {
 }
 
 .logo-container {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -153,7 +153,10 @@ header a:hover {
 }
 
 .headerlinks {
-    flex: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +172,7 @@ header a:hover {
 }
 
 .headercontact {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
