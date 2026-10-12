@@ -73,7 +73,7 @@
 
 .waarom-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -93,10 +93,11 @@
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     flex: 1;
-    min-width: 80vw;
+    min-width: 28vw;
+    max-width: 30vw;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: scale(1);
@@ -119,7 +120,7 @@
 }
 
 .waarom-img {
-    width: 40vw;
+    width: 26vw;
     height: auto;
     margin-bottom: 16px;
     border-radius: 12px;
