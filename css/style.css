@@ -38,10 +38,10 @@ html, body {
     padding: 0;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
-background: #121212;
-background: -webkit-linear-gradient(163deg,rgba(18, 18, 18, 1) 0%, rgba(11, 77, 135, 1) 90%);
-background: -moz-linear-gradient(163deg,rgba(18, 18, 18, 1) 0%, rgba(11, 77, 135, 1) 90%);
-background: linear-gradient(163deg,rgba(18, 18, 18, 1) 0%, rgba(11, 77, 135, 1) 90%);
+    background: #121212;
+    background: -webkit-linear-gradient(163deg,rgba(18, 18, 18, 1) 0%, rgba(11, 77, 135, 1) 90%);
+    background: -moz-linear-gradient(163deg,rgba(18, 18, 18, 1) 0%, rgba(11, 77, 135, 1) 90%);
+    background: linear-gradient(163deg,rgba(18, 18, 18, 1) 0%, rgba(11, 77, 135, 1) 90%);
     overflow-x: hidden;
 }
 
