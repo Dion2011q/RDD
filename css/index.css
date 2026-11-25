@@ -149,7 +149,7 @@
 }
 
 #EASA {
-    width: 80vw;
+    width: 100%;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -158,18 +158,45 @@
 }
 
 #EASA-content {
-  color: var(--text-color-white);
-  text-align: left;
-  min-height: 60vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; /* <- zet ruimte tussen logo en tekst */
-  align-items: center;
-  border-radius: 0;
-  box-sizing: border-box;
-  padding: 24px;
-  gap: 2rem; /* houd dit redelijk klein */
+    color: var(--text-color-white);
+    text-align: left;
+    min-height: 60vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.EASA-text {
+    flex: 1;
+    min-width: 0;
+    max-width: 40vw;
+}
+
+.EASA-text p {
+    font-size: 1.15rem;
+}
+
+#open-sub-category-badges {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    max-width: 45%;
+}
+
+.EASA-img {
+    width: 17vw;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -179,41 +206,21 @@
         gap: 24px;
         text-align: center;
     }
-}
 
-.EASA-text {
-  width: 40%; /* tekst neemt ongeveer 2/3 */
-}
-
-@media (max-width: 768px) {
     .EASA-text {
-        width: 80vw;
+        max-width: 80vw;
+        flex: none;
     }
-}
 
-.EASA-text p {
-    font-size: 1.15rem;
-}
+    #open-sub-category-badges {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 
-#open-sub-category-badges {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    width: 33%;
-}
-
-.EASA-img {
-  max-width: 18vw;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  object-fit: contain;
-}
-
-@media (max-width: 768px) {
     .EASA-img {
         width: 80vw;
-        height: auto;
+        max-width: 80vw;
     }
 }
 
